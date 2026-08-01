@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CoachSync support, contact, and account deletion instructions.">
+  <title>Support — CoachSync</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/icon.png" alt="CoachSync" width="36" height="36">
+        <span class="logo-text">CoachSync</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main">
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="index.html#download" class="btn btn-primary btn-sm">Download</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-mobile" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <div class="section-header" style="text-align:left;margin-bottom:2rem">
+        <h1 style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;margin-bottom:0.5rem">
+          Support &amp; Contact
+        </h1>
+        <p class="legal-meta" style="margin-bottom:0">
+          We're here to help with CoachSync on iOS and Android.
+        </p>
+      </div>
+
+      <div class="support-grid">
+        <article class="glass-card support-card">
+          <h3>Contact Us</h3>
+          <p>
+            For general questions, bug reports, feature requests, or account
+            issues, email us at:
+          </p>
+          <p>
+            <a data-contact-email href="mailto:support@rgsoft.org"
+               class="btn btn-primary">support@rgsoft.org</a>
+          </p>
+          <p>
+            We aim to respond within 2–3 business days.
+          </p>
+        </article>
+
+        <article class="glass-card support-card">
+          <h3>Subscription &amp; Billing</h3>
+          <p>
+            CoachSync subscriptions (Galaxy plan) are managed through the Apple
+            App Store or Google Play Store. To view, change, or cancel your
+            subscription:
+          </p>
+          <ul class="audience-list">
+            <li><strong>iOS:</strong> Settings → Apple ID → Subscriptions → CoachSync</li>
+            <li><strong>Android:</strong> Google Play → Profile → Payments &amp; subscriptions → Subscriptions</li>
+          </ul>
+          <p>
+            For refund requests, contact Apple or Google directly per their
+            policies.
+          </p>
+        </article>
+
+        <article class="glass-card support-card" id="delete-account">
+          <h3>Delete Your Account</h3>
+          <p>
+            You can permanently delete your CoachSync account and associated
+            data using either method below.
+          </p>
+          <h4 style="font-size:1rem;font-weight:600;margin:1.25rem 0 0.75rem">
+            Option 1: Delete from the app
+          </h4>
+          <ol class="support-steps">
+            <li>Open CoachSync and sign in.</li>
+            <li>Go to your Profile or Settings.</li>
+            <li>Find "Delete Account" or "Account Deletion".</li>
+            <li>Follow the on-screen confirmation steps.</li>
+          </ol>
+          <h4 style="font-size:1rem;font-weight:600;margin:1.25rem 0 0.75rem">
+            Option 2: Request by email
+          </h4>
+          <ol class="support-steps">
+            <li>Email <a data-contact-email href="mailto:support@rgsoft.org">support@rgsoft.org</a> from the address linked to your account.</li>
+            <li>Subject line: "CoachSync Account Deletion Request".</li>
+            <li>Include your display name and the email used to sign in.</li>
+            <li>We will confirm and process deletion within 30 days.</li>
+          </ol>
+          <p>
+            Account deletion is permanent. Active subscriptions must be cancelled
+            separately through the App Store or Play Store.
+          </p>
+        </article>
+
+        <article class="glass-card support-card">
+          <h3>Privacy &amp; Legal</h3>
+          <p>
+            Read our policies for details on data collection, AI processing, and
+            your rights:
+          </p>
+          <ul class="audience-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> RG Soft</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a> &middot;
+        <a href="privacy.html">Privacy</a> &middot;
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
