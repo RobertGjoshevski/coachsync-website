@@ -59,6 +59,43 @@
     });
   }
 
+  function initLegalToc() {
+    var panels = document.querySelectorAll('.legal-toc-panel');
+    if (!panels.length) {
+      return;
+    }
+
+    var mq = window.matchMedia('(min-width: 768px)');
+
+    function syncOpenState() {
+      panels.forEach(function (panel) {
+        if (mq.matches) {
+          panel.setAttribute('open', '');
+        } else {
+          panel.removeAttribute('open');
+        }
+      });
+    }
+
+    syncOpenState();
+
+    if (mq.addEventListener) {
+      mq.addEventListener('change', syncOpenState);
+    } else if (mq.addListener) {
+      mq.addListener(syncOpenState);
+    }
+
+    panels.forEach(function (panel) {
+      panel.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (!mq.matches) {
+            panel.removeAttribute('open');
+          }
+        });
+      });
+    });
+  }
+
   function initContactEmail() {
     var email = config.contactEmail;
     if (!email) {
@@ -81,5 +118,6 @@
     initMobileNav();
     initStoreButtons();
     initContactEmail();
+    initLegalToc();
   });
 })();
